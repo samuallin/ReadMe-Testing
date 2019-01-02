@@ -84,7 +84,7 @@ Give an example
 
 ### Tuning parameters
 
-Explain how to tuning parameters to see different results with the script
+Explain parameters and how to tuning parameters to see different results with the script
 
 ```
 Give an example
@@ -114,17 +114,17 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* Android APP
-* Windows APP
-* Web pages
+### Android APP
+### Windows APP
+### Web pages
 
-## Implementation
+## Implementation Details
 
-* Paper
-* Framework
-* Model
-* Optimization
-* ...
+### Paper
+### Framework
+### Model
+### Optimization
+### ...
 
 ## Contributing
 

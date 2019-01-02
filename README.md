@@ -146,7 +146,7 @@ Who you should contact with, email
 
 ## License
 
-This project is licensed under the Apache License 2.0, see the [LICENSE.md](LICENSE.md)
+This project is licensed under the Apache License 2.0, see the [LICENSE]
 
 ## Acknowledgments
 

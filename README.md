@@ -8,11 +8,16 @@ Descriptions:
 
 ## Table of Contents (Optional)
 
+* Features
+* Getting Started
+* Prerequisites
+* ...
+
 ## Features
 
 Features supportted, example: 
 * Van Gogh gallery
-* Training with
+* Training with Python
 * Real time camera style transfer
 * Upload pictures for inference
 

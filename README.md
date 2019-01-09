@@ -115,9 +115,9 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 ### Android APP
-See [Android_README.md](Android_README)
+See [Android_README.md](Android_README.md)
 ### Windows APP
-See [Windows_README.md](Android_README)
+See [Windows_README.md](Windows_README.md)
 ### Web pages
 
 ## Implementation Details

@@ -1,4 +1,4 @@
-# Vangogh Crazy World
+# Vangogh Crazy World - Android Applications
 
 One Paragraph of project description goes here, example: Neural Style Transfer, Van Gogh Crazy World
 Descriptions:
@@ -31,10 +31,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-CUDA (optional)
-cuDNN (optional)
-Python
-Python packages
+Android studio
 ```
 
 ### Installing
@@ -42,27 +39,6 @@ Python packages
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
-
-```
-git clone source code
-```
-
-```
-CUDA (optional)
-```
-
-```
-cuDNN (optional)
-```
-
-```
-Python
-```
-
-```
-pip install tensorflow-gpu and more
-This can be done automatically by a script file
-```
 
 ```
 install Android Studio
@@ -74,56 +50,22 @@ until finished
 
 If possibile, end with an example of getting some data out of the system or using it for a little demo
 
-## Training
-
-Explain how to do the training with the script
-
-```
-Give an example
-```
-
-### Tuning parameters
-
-Explain parameters and how to tuning parameters to see different results with the script
-
-```
-Give an example
-```
 
 
-## Testing
-
-Explain how to do the testing with the script and show the results
-
-```
-Give an example
-```
-
-## Transfer Taining, build your own model
-
-Explain how to build your model with your data with the script
-
-```
-Give an example
-```
-
-
-## Deployment
+## Build Andoid Applications
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
 
-### Android APP
-### Windows APP
-### Web pages
+### Import Gradle
+### Run on Android Studio
+### Make Android.apk
 
 ## Implementation Details
 
-### Paper
-### Framework
-### Model
+### Architecture
 ### Optimization
+### Enhancement
 ### ...
 
 ## Contributing

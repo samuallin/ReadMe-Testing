@@ -37,11 +37,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Getting the Code
 
 ```
-git clone
+git clone https://github.com/acerwebai/VangoghCrazyWorld.git
 ```
 
 ### Get Pre-Trained Model
-Get pre-trained models
+Get pre-trained models from here
 
 ### Prerequisites
 

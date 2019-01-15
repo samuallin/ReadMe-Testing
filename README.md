@@ -47,12 +47,13 @@ Get pre-trained models from here
 
 What things you need to install the software and how to install them
 
-```
-CUDA (optional)
-cuDNN (optional)
-Python
-Python packages
-```
+** Python
+If your machine support nVidia GPU, please refer to the installation from nVidia 
+** CUDA (optional)
+https://docs.nvidia.com/cuda/
+** cuDNN (optional)
+https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+
 
 ### Installing
 

@@ -135,8 +135,9 @@ See [Android_README.md](Android_README.md)
 See [Windows_README.md](Windows_README.md)
 ### Web pages
 See [Web_README.md](Web.md)
-## Implementation Details
 
+## Implementation Details
+The implementation is based on the [Fast Style Transfer in TensorFlow from ](https://github.com/lengstrom/fast-style-transfer) from [lengstrom](https://github.com/lengstrom/fast-style-transfer/commits?author=lengstrom)
 ### Paper
 ### Framework
 ### Model

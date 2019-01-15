@@ -48,11 +48,27 @@ Get pre-trained models from here
 What things you need to install the software and how to install them
 
 ** Python
+
 If your machine support nVidia GPU, please refer to the installation from nVidia 
 ** CUDA (optional)
 https://docs.nvidia.com/cuda/
 ** cuDNN (optional)
 https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+
+
+### Create Virtual Environment
+
+In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run VangoghCrazyWorld. You can create it using this command:
+
+```
+virtualenv -p python3 $HOME/tmp/VangoghCrazyWorld-venv/
+```
+
+Activate the virtual environment
+
+```
+source $HOME/tmp/deepspeech-venv/bin/activate
+```
 
 
 ### Installing

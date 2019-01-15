@@ -2,7 +2,13 @@
 
 One Paragraph of project description goes here, example: Neural Style Transfer, Van Gogh Crazy World
 Descriptions:
-* Background, example: Learning what is neural style transfer, short explination of the neural style transfer history 
+* Background, example: Learning what is neural style transfer, short explination of the neural style transfer history
+
+## Neural style transfer
+
+Neural style transfer is the process of taking the style of one image then applying it to the content of another image.
+Offering you a variety of beautiful styles some of which are paintings by famous artists like Starry Night by Van Gogh.
+
 * Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...maybe more link to wiki
 * Experience, example: A full package of build neural style transfer training on Linux and Android inference applications (and Windows link in another repository)
 
@@ -15,11 +21,13 @@ Descriptions:
 
 ## Features
 
-Features supportted, example: 
-* Van Gogh gallery
-* Training with Python
-* Real time camera style transfer
-* Upload pictures for inference
+Features supportted, example:
+In this project, it will provide the following packages
+* Training Van Gogh gallery with Python
+* Inference with real time camera and still images
+** Deployment on Windows application
+** Deployment on Windows application
+** Deployment on web browser
 
 
 ## Getting Started

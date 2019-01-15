@@ -25,9 +25,9 @@ Features supportted, example:
 In this project, it will provide the following packages
 * Training Van Gogh gallery with Python
 * Inference with real time camera and still images
-** Deployment on Windows application
-** Deployment on Windows application
-** Deployment on web browser
+**Deployment on Windows application
+**Deployment on Windows application
+**Deployment on web browser
 
 
 ## Getting Started
@@ -47,12 +47,12 @@ Get pre-trained models from here
 
 What things you need to install the software and how to install them
 
-** Python
+* Python
 
 If your machine support nVidia GPU, please refer to the installation from nVidia 
-** CUDA (optional)
+* CUDA (optional)
 https://docs.nvidia.com/cuda/
-** cuDNN (optional)
+* cuDNN (optional)
 https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
 
 

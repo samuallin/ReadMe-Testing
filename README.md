@@ -50,9 +50,9 @@ What things you need to install the software and how to install them
 * Python
 
 If your machine support nVidia GPU, please refer to the installation from nVidia 
-* CUDA (optional)
+* CUDA (optional): 
 https://docs.nvidia.com/cuda/
-* cuDNN (optional)
+* cuDNN (optional): 
 https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
 
 
@@ -67,7 +67,7 @@ virtualenv -p python3 $HOME/tmp/VangoghCrazyWorld-venv/
 Activate the virtual environment
 
 ```
-source $HOME/tmp/deepspeech-venv/bin/activate
+source $HOME/tmp/VangoghCrazyWorld-venv/bin/activate
 ```
 
 ### Installing
@@ -147,6 +147,9 @@ See [Web_README.md](Web.md)
 
 ## Implementation Details
 The implementation is based on the [Fast Style Transfer in TensorFlow from ](https://github.com/lengstrom/fast-style-transfer) from [lengstrom](https://github.com/lengstrom/fast-style-transfer/commits?author=lengstrom)
+
+It use roughly the same transformation network as described in Johnson, except that batch normalization is replaced with Ulyanov's instance normalization, and the scaling/offset of the output tanh layer is slightly different. We use a loss function close to the one described in Gatys, using VGG19 instead of VGG16 and typically using "shallower" layers than in Johnson's implementation (e.g. we use relu1_1 rather than relu1_2). Empirically, this results in larger scale style features in transformations.
+
 ### Paper
 ### Framework
 ### Model

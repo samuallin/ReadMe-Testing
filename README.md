@@ -2,8 +2,8 @@
 
 One Paragraph of project description goes here, example: Neural Style Transfer, Van Gogh Crazy World
 Descriptions:
-* Background, example: Learning what is neural style transfer 
-* Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...
+* Background, example: Learning what is neural style transfer, short explination of the neural style transfer history 
+* Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...maybe more link to wiki
 * Experience, example: A full package of build neural style transfer training on Linux and Android inference applications (and Windows link in another repository)
 
 ## Table of Contents (Optional)

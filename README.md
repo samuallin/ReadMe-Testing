@@ -113,16 +113,20 @@ python evaluate.py --checkpoint path/to/style/model.ckpt \
 Explain how to do the training with the script
 
 ```
-Give an example
+python style.py --style path/to/style/img.jpg \
+  --checkpoint-dir checkpoint/path \
+  --test path/to/test/img.jpg \
+  --test-dir path/to/test/dir \
+  --content-weight 1.5e1 \
+  --checkpoint-iterations 1000 \
+  --batch-size 20
 ```
 
 ### Tuning parameters
 
 Explain parameters and how to tuning parameters to see different results with the script
-
-```
-Give an example
-```
+* Content loss
+* Style loss
 
 
 ## Testing
@@ -130,7 +134,9 @@ Give an example
 Explain how to do the testing with the script and show the results
 
 ```
-Give an example
+python evaluate.py --checkpoint path/to/style/model.ckpt \
+  --in-path dir/of/test/imgs/ \
+  --out-path dir/for/results/
 ```
 
 ## Transfer Taining, build your own model
@@ -138,10 +144,22 @@ Give an example
 Explain how to build your model with your data with the script
 
 ```
-Give an example
+python style.py --style path/to/style/img.jpg \
+  --checkpoint-dir checkpoint/path \
+  --test path/to/test/img.jpg \
+  --test-dir path/to/test/dir \
+  --content-weight 1.5e1 \
+  --checkpoint-iterations 1000 \
+  --batch-size 20
 ```
 ### Find Your Checkpoint
+
+Checkpoint should be found in the --checkpoint-dir
+
 ### Freezing Model
+
+The frozen model can be found in the --checkpoint-dir
+You can use the tool as well
 
 
 ## Deployment

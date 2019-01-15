@@ -10,7 +10,14 @@ Neural style transfer is the process of taking the style of one image then apply
 Offering you a variety of beautiful styles some of which are paintings by famous artists like Starry Night by Van Gogh.
 
 * Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...maybe more link to wiki
+
+## Van Gogh
+
 * Experience, example: A full package of build neural style transfer training on Linux and Android inference applications (and Windows link in another repository)
+
+## Experience
+
+We would like to bring you to Vangogh Crazy World, you can use pre-trained or your own model and deploy to Windows, Android applications, and even web pages.
 
 ## Table of Contents (Optional)
 

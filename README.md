@@ -32,9 +32,9 @@ Features supportted, example:
 In this project, it will provide the following packages
 * Training Van Gogh gallery with Python
 * Inference with real time camera and still images
-* Deployment on Windows application
-* Deployment on Windows application
-* Deployment on web browser
+* Deployment on Windows applications
+* Deployment on Android applications
+* Deployment on web pages
 
 
 ## Getting Started
@@ -65,7 +65,8 @@ https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
 
 ### Create Virtual Environment
 
-In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run VangoghCrazyWorld. You can create it using this command:
+In creating a virtual environment you will create a directory containing a python binary and everything needed to run VangoghCrazyWorld.
+You can create it using this command:
 
 ```
 virtualenv -p python3 $HOME/tmp/VangoghCrazyWorld-venv/
@@ -76,6 +77,7 @@ Activate the virtual environment
 ```
 source $HOME/tmp/VangoghCrazyWorld-venv/bin/activate
 ```
+In that, you can isolate the working environments project by project 
 
 ### Installing
 
@@ -89,19 +91,22 @@ Change directory to VangoghCrazyWorld
 cd VangoghCrazyWorld
 ```
 
-Required packages are listing in the requirements.txt, all you need to do is just as following command
+Required packages are listing in the requirements.txt, all you need to do is just to pip install the dependencies
 
 ```
 pip install -r requirements.txt
 ```
-Note: If your machine do not support nVidia GPU, please replace Tensorflow-gpu as Tensorflow in the requirements.txt
+Note: If your machine do not support nVidia GPU, please replace Tensorflow-gpu as Tensorflow inside the requirements.txt
 
 
 ### Run Pre-Trained Models
 If possibile, end with an example of getting some data out of the system or using it for a little demo
 
-
-
+```
+python evaluate.py --checkpoint path/to/style/model.ckpt \
+  --in-path dir/of/test/imgs/ \
+  --out-path dir/for/results/
+```
 
 ## Training
 

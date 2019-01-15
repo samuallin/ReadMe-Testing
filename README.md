@@ -25,9 +25,9 @@ Features supportted, example:
 In this project, it will provide the following packages
 * Training Van Gogh gallery with Python
 * Inference with real time camera and still images
-**Deployment on Windows application
-**Deployment on Windows application
-**Deployment on web browser
+* Deployment on Windows application
+* Deployment on Windows application
+* Deployment on web browser
 
 
 ## Getting Started
@@ -41,7 +41,7 @@ git clone https://github.com/acerwebai/VangoghCrazyWorld.git
 ```
 
 ### Get Pre-Trained Model
-Get pre-trained models from here
+Pre-trained models can be download from here
 
 ### Prerequisites
 
@@ -70,41 +70,25 @@ Activate the virtual environment
 source $HOME/tmp/deepspeech-venv/bin/activate
 ```
 
-
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
 
-```
-git clone source code
-```
+Change directory to VangoghCrazyWorld
 
 ```
-CUDA (optional)
+cd VangoghCrazyWorld
 ```
 
-```
-cuDNN (optional)
-```
+Required packages are listing in the requirements.txt, all you need to do is just as following command
 
 ```
-Python
+pip install -r requirements.txt
 ```
+Note: If your machine do not support nVidia GPU, please replace Tensorflow-gpu as Tensorflow in the requirements.txt
 
-```
-pip install tensorflow-gpu and more
-This can be done automatically by a script file
-```
-
-```
-install Android Studio
-```
-
-```
-until finished
-```
 
 ### Run Pre-Trained Models
 If possibile, end with an example of getting some data out of the system or using it for a little demo

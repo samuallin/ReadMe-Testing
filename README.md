@@ -1,23 +1,19 @@
 # Vangogh Crazy World
 
-One Paragraph of project description goes here, example: Neural Style Transfer, Van Gogh Crazy World
-Descriptions:
-* Background, example: Learning what is neural style transfer, short explination of the neural style transfer history
-
 ## Neural style transfer
 
 Neural style transfer is the process of taking the style of one image then applying it to the content of another image.
 Offering you a variety of beautiful styles some of which are paintings by famous artists like Starry Night by Van Gogh.
 
-* Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...maybe more link to wiki
 
-## Van Gogh
+## Vincent van Gogh
+For more Vincent van Gogh, please refer to [wiki](https://en.wikipedia.org/wiki/Vincent_van_Gogh)
 
-* Experience, example: A full package of build neural style transfer training on Linux and Android inference applications (and Windows link in another repository)
 
 ## Experience
 
-We would like to bring you to Vangogh Crazy World, you can use pre-trained or your own model and deploy to Windows, Android applications, and even web pages.
+We would like to bring you to Vangogh Crazy World, insight the sample code, you can use pre-trained model or you can try to train your own models.
+After that you can decided to deploy on various devices which running on to Windows or Android and even OS independent web pages.
 
 ## Table of Contents (Optional)
 
@@ -28,13 +24,12 @@ We would like to bring you to Vangogh Crazy World, you can use pre-trained or yo
 
 ## Features
 
-Features supportted, example:
 In this project, it will provide the following packages
 * Training Van Gogh gallery with Python
-* Inference with real time camera and still images
-* Deployment on Windows applications
-* Deployment on Android applications
-* Deployment on web pages
+ * Inference with real time camera and still images and 
+ * Deployment on Windows applications
+ * Deployment on Android applications
+ * Deployment on web pages
 
 
 ## Getting Started

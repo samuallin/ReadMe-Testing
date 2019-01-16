@@ -11,7 +11,7 @@ For more Vincent van Gogh, please refer to [wiki](https://en.wikipedia.org/wiki/
 
 ## Tensorflow
 The source code in this project is written in Tensorflow
-For more Vincent van Gogh, please refer to [Tensorflow](https://www.tensorflow.org/)
+For more Tensorflow, please refer to [Tensorflow](https://www.tensorflow.org/)
 
 
 ## Experience

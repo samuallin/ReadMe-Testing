@@ -3,6 +3,7 @@
 ## Neural style transfer
 
 Neural style transfer is the process of taking the style of one image then applying it to the content of another image.
+
 Offering you a variety of beautiful styles some of which are paintings by famous artists like Starry Night by Van Gogh.
 
 
@@ -11,12 +12,14 @@ For more Vincent van Gogh, please refer to [wiki](https://en.wikipedia.org/wiki/
 
 ## Tensorflow Lite
 The model in this project is written in Tensorflow Lite
+
 For more Tensorflow Lite, please refer to [Tensorflow Lite](https://www.tensorflow.org/lite/)
 
 
 ## Experience
 
 We would like to bring you to Vangogh Crazy World, insight the sample code, you can use pre-trained model or you can try to train your own models.
+
 After that you can decided to deploy on various devices which running on to Windows or Android and even OS independent web pages.
 
 ## Table of Contents (Optional)
@@ -52,12 +55,15 @@ You can download the pre-built apk from here
 ## Converting Model
 
 While in the training process, we build up the model and freeze it.
+
 If you would like to kow how to train the neural style transfer models, please refer to [VangoghCrazyWorld](https://github.com/acerwebai/VangoghCrazyWorld)
+
 Now we can used the frozen model and deploy various devices in Windows or Android, or even OS independent web pages.
 
 ### Tensorflow Lite
 
 We can convert Tensorflow frozen.pb to Tensorflow Lite format via [TensorFlow Lite Converter](https://www.tensorflow.org/lite/convert/)
+
 Once you have ever installed the tensorflow during the training process, you can use the following to convert the Tensorflow model as Tensorflow Lite format
 
 ```
@@ -117,6 +123,7 @@ Make your own Android applications
 
 
 ## Implementation Details
+
 The implementation is based on the [Fast Style Transfer in TensorFlow from ](https://github.com/lengstrom/fast-style-transfer) from [lengstrom](https://github.com/lengstrom/fast-style-transfer/commits?author=lengstrom)
 
 It use roughly the same transformation network as described in Johnson, except that batch normalization is replaced with Ulyanov's instance normalization, and the scaling/offset of the output tanh layer is slightly different. We use a loss function close to the one described in Gatys, using VGG19 instead of VGG16 and typically using "shallower" layers than in Johnson's implementation (e.g. we use relu1_1 rather than relu1_2). Empirically, this results in larger scale style features in transformations.
@@ -141,6 +148,7 @@ VGG16
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 

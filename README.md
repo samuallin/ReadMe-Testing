@@ -9,6 +9,10 @@ Offering you a variety of beautiful styles some of which are paintings by famous
 ## Vincent van Gogh
 For more Vincent van Gogh, please refer to [wiki](https://en.wikipedia.org/wiki/Vincent_van_Gogh)
 
+## Tensorflow
+The source code in this project is written in Tensorflow
+For more Vincent van Gogh, please refer to [Tensorflow](https://www.tensorflow.org/)
+
 
 ## Experience
 
@@ -32,9 +36,9 @@ In this project, it will provide the following packages
   * Deployment on web pages
 
 
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Getting the Code
 
@@ -43,72 +47,81 @@ git clone https://github.com/acerwebai/VangoghCrazyWorld.git
 ```
 
 ### Get Pre-Trained Model
-Pre-trained models can be download from here
+You can download the pre-trained models from here and should find the checkpoint files for each models
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* Python 3.6
 
-* Python
-
-If your machine support nVidia GPU, please refer to the installation from nVidia 
-* CUDA (optional): 
-https://docs.nvidia.com/cuda/
-* cuDNN (optional): 
-https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
-
+* (Optional) If your machine support [nVidia GPU with CUDA](https://developer.nvidia.com/cuda-gpus), please refer to the installation from nVidia 
+	* CUDA: https://docs.nvidia.com/cuda/
+	* cuDNN: https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+	* Note: CUDA and cuDNN has [dependencies](https://docs.nvidia.com/deeplearning/sdk/cudnn-support-matrix/index.html)
 
 ### Create Virtual Environment
 
 In creating a virtual environment you will create a directory containing a python binary and everything needed to run VangoghCrazyWorld.
-You can create it using this command:
+
+Firstly, you need to install virtualenvwrapper via
+
+```
+pip install virtualenvwrapper
+```
+
+Then you can create a virtual environment using this command:
 
 ```
 virtualenv -p python3 $HOME/tmp/VangoghCrazyWorld-venv/
 ```
 
-Activate the virtual environment
+And activate the virtual environment like this 
 
 ```
 source $HOME/tmp/VangoghCrazyWorld-venv/bin/activate
 ```
-In that, you can isolate the working environments project by project 
+
+In that, you can isolate the working environments project by project.
+So, please workon this virtual environment for the following installations.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-Change directory to VangoghCrazyWorld
+Change directory to VangoghCrazyWorld, where the git clone goes
 
 ```
 cd VangoghCrazyWorld
 ```
 
-Required packages are listing in the requirements.txt, all you need to do is just to pip install the dependencies
+We have already make all required packages listing in the requirements.txt, all you need to do is just to pip install the dependencies
 
 ```
 pip install -r requirements.txt
 ```
+
 Note: If your machine do not support nVidia GPU, please replace Tensorflow-gpu as Tensorflow inside the requirements.txt
 
 
 ### Run Pre-Trained Models
-If possibile, end with an example of getting some data out of the system or using it for a little demo
+Now, you have all the packages for running the pre-trained models
+You can have a trial run the starrynight style model that we have pre-trained, from the as following 
 
 ```
-python evaluate.py --checkpoint path/to/style/model.ckpt \
+python evaluate.py --checkpoint path/to/style/starrynight \
   --in-path dir/of/test/imgs/ \
   --out-path dir/for/results/
+ 
 ```
+
+where
+* --checkpoint: is the path where you place the pre-trained model checkpoint
+* --in-path: is the path to input images, can be a folder or a file
+* --out-path: is the path to output images, can be a folder or a file
 
 ## Training
 
-Explain how to do the training with the script
+Let's start to do the training
 
 ```
-python style.py --style path/to/style/img.jpg \
+python style.py --style path/to/style/starrynight.jpg \
   --checkpoint-dir checkpoint/path \
   --test path/to/test/img.jpg \
   --test-dir path/to/test/dir \
@@ -117,26 +130,48 @@ python style.py --style path/to/style/img.jpg \
   --batch-size 20
 ```
 
-### Tuning parameters
+where
+* --checkpoint-dir: is the path to save checkpoint in
+* --style: style image path
+* --train-path: path to training images folder
+* --test: test image path
+* --test-dir: test image save dir
+* --epochs: number of epochs
+* --batch-size: number of images feed for a batch
+* --checkpoint-iterations: checkpoint save frequency
+* --vgg-path: path to VGG19 network
+* --content-weight: content weight
+* --style-weight: style weight
+* --tv-weight: total variation regularization weight
+* --learning-rate: learning rate
 
-Explain parameters and how to tuning parameters to see different results with the script
-* Content loss
-* Style loss
+### Tuning parameters
+The Loss function of the style transfer can be illustrated as
+
+``` 
+Loss = alpha*C_loss(C_Lys, C, G) + beta*S_Loss(S_Lys, S, G)
+```
+
+Therefore, we can tuning the total loss via  
+* --content-weight
+* --style-weight
+
+For more tuning techniques, please refer to [this medium post](https://towardsdatascience.com/practical-techniques-for-getting-style-transfer-to-work-19884a0d69eb) 
 
 
 ## Testing
 
-Explain how to do the testing with the script and show the results
+You can evaluate the trained models via
 
 ```
-python evaluate.py --checkpoint path/to/style/model.ckpt \
+python evaluate.py --checkpoint path/to/style/starrynight \
   --in-path dir/of/test/imgs/ \
   --out-path dir/for/results/
 ```
 
 ## Transfer Taining, build your own model
 
-Explain how to build your model with your data with the script
+You can change the style image whatever you would like to train
 
 ```
 python style.py --style path/to/style/img.jpg \
@@ -149,17 +184,17 @@ python style.py --style path/to/style/img.jpg \
 ```
 ### Find Your Checkpoint
 
-Checkpoint should be found in the --checkpoint-dir
+You should find the checkpoint @--checkpoint-dir folder
 
-### Freezing Model
+### Frozen Model
 
-The frozen model can be found in the --checkpoint-dir
-You can use the tool as well
-
+You should find the checkpoint @--checkpoint-dir folder
+We use the Tensorflow [freeze_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) to make it frozen
+We need frozen model for deployment to various devices in Windows or Android, or even OS independent web pages
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+For the deployment, please follow the instructions below
 
 ## Built With
 
@@ -176,10 +211,21 @@ The implementation is based on the [Fast Style Transfer in TensorFlow from ](htt
 It use roughly the same transformation network as described in Johnson, except that batch normalization is replaced with Ulyanov's instance normalization, and the scaling/offset of the output tanh layer is slightly different. We use a loss function close to the one described in Gatys, using VGG19 instead of VGG16 and typically using "shallower" layers than in Johnson's implementation (e.g. we use relu1_1 rather than relu1_2). Empirically, this results in larger scale style features in transformations.
 
 ### Paper
+
+[Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://cs.stanford.edu/people/jcjohns/eccv16/)
+
+
 ### Framework
+
+[Tensorflow](https://www.tensorflow.org/)
+
 ### Model
+
+VGG16
+
 ### Optimization
-### ...
+
+
 
 ## Contributing
 

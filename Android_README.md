@@ -52,6 +52,7 @@ You can download the pre-built apk from here
 ## Converting Model
 
 While in the training process, we build up the model and freeze it.
+If you would like to kow how to train the neural style transfer models, please refer to [VangoghCrazyWorld](https://github.com/acerwebai/VangoghCrazyWorld)
 Now we can used the frozen model and deploy various devices in Windows or Android, or even OS independent web pages.
 
 ### Tensorflow Lite
@@ -79,7 +80,7 @@ where
 * --output_array: the output array name, in our case, should be add_37
 * --inference_type: FLOAT or QUANTIZED_UINT8
 
-Tensorflow Lite is easy to deployed in Android application and can get benifit of the accerleratio of [Android Neural Networks API](https://developer.android.com/ndk/guides/neuralnetworks/)
+Tensorflow Lite is easy to be deployed in Android application and can get benifit of the accerleratio of [Android Neural Networks API](https://developer.android.com/ndk/guides/neuralnetworks/)
 
 ## Android Applications
 
@@ -127,7 +128,7 @@ It use roughly the same transformation network as described in Johnson, except t
 
 ### Framework
 
-[Tensorflow](https://www.tensorflow.org/)
+[Tensorflow Lite](https://www.tensorflow.org/lite/)
 
 ### Model
 

@@ -10,7 +10,7 @@ Offering you a variety of beautiful styles some of which are paintings by famous
 For more Vincent van Gogh, please refer to [wiki](https://en.wikipedia.org/wiki/Vincent_van_Gogh)
 
 ## Tensorflow
-The source code in this project is written in Tensorflow
+The source code in this project is written in Tensorflow.
 For more Tensorflow, please refer to [Tensorflow](https://www.tensorflow.org/)
 
 

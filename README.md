@@ -26,10 +26,10 @@ After that you can decided to deploy on various devices which running on to Wind
 
 In this project, it will provide the following packages
 * Training Van Gogh gallery with Python
- * Inference with real time camera and still images and 
- * Deployment on Windows applications
- * Deployment on Android applications
- * Deployment on web pages
+  * Inference with real time camera and still images and 
+  * Deployment on Windows applications
+  * Deployment on Android applications
+  * Deployment on web pages
 
 
 ## Getting Started
